@@ -89,7 +89,7 @@ export const Container = styled.div`
 
     table td, table th {
       padding: ${theme.spacings.small}
-      boder: 0.1rem solid ${theme.colors.mediumGray};
+      boder: 0.1rem solid ${theme.colors.darkerGray};
     }
 
     blockquote {
