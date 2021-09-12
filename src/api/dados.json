@@ -1,0 +1,91 @@
+{
+  "data": {
+    "setting": {
+      "id": "61368e81759ca415cca00cf9",
+      "blogName": "Song Blog",
+      "blogDescription": "Apenas mais um blog para exemplo",
+      "logo": {
+        "id": "61369af6944b2833649bd0b6",
+        "alternativeText": "",
+        "url": "https://res.cloudinary.com/dakogxupg/image/upload/v1630968562/547345_1e3e1e3dc5.jpg"
+      },
+      "menuLink": [
+        {
+          "id": "61376aa7af34121f3c86488e",
+          "link": "link 2",
+          "text": "link 2",
+          "newTab": false
+        }
+      ],
+      "text": "<p>apenas um <code>ola mundo</code></p>"
+    },
+    "posts": [
+      {
+        "createdAt": "2020-04-20",
+        "id": "6136967382ff5c26f0f3061d",
+        "slug": "anonymous",
+        "title": "Anonymous declara guerra contra Bolsonaro e hackeia Fib Bank",
+        "excerpt": "\"Nós tomaremos as ruas para mostrar que o queremos fora do governo, derrotado\", diz o vídeo do grupo. \"Em suas próprias palavras, restarão apenas duas opções para ele: prisão ou cova.\".",
+        "content": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(38,38,38);\">\"Nós tomaremos as ruas para mostrar que o queremos fora do governo, derrotado\", diz o vídeo do grupo. \"Em suas próprias palavras, restarão apenas duas opções para ele: prisão ou cova.\".</span></p>",
+        "allowComments": true,
+        "cover": {
+          "id": "613695e182ff5c26f0f3061a",
+          "alternativeText": "",
+          "url": "https://res.cloudinary.com/dakogxupg/image/upload/v1630967260/06140704347221_0c6996ecd2.jpg"
+        },
+        "categories": [
+          {
+            "id": "6136965c82ff5c26f0f3061c",
+            "displayName": "tecnologia",
+            "slug": "tecnologia"
+          }
+        ],
+        "tags": [
+          {
+            "id": "6136963582ff5c26f0f3061b",
+            "displayName": "tecnologia",
+            "slug": "tecnologia"
+          }
+        ],
+        "author": {
+          "id": "6136936a82ff5c26f0f30614",
+          "displayName": "song shik",
+          "slug": "song-shik"
+        }
+      },
+      {
+        "createdAt": "2020-04-20",
+        "id": "61369b55944b2833649bd0b7",
+        "slug": "Samsung-s20",
+        "title": "Samsung s20 fe",
+        "excerpt": "\"Nós tomaremos as ruas para mostrar que o queremos fora do governo, derrotado\", diz o vídeo do grupo. \"Em suas próprias palavras, restarão apenas duas opções para ele: prisão ou cova.\".",
+        "content": "<ul><li style=\"text-align:justify;\">Carregador de 15W com suporte a carregamento acelerado</li><li style=\"text-align:justify;\">Cabo no padrão USB-C nas duas pontas</li><li style=\"text-align:justify;\">Fone de ouvido</li><li style=\"text-align:justify;\">Ponteiras para o fone em tamanhos diferentes</li><li style=\"text-align:justify;\">Manuais do usuário</li><li style=\"text-align:justify;\">Chavinha para abrir gaveta do cartão SIM</li><li style=\"text-align:justify;\">Capinha de silicone transparente</li><li style=\"text-align:justify;\">&nbsp;</li></ul><figure class=\"image\"><img src=\"https://res.cloudinary.com/dakogxupg/image/upload/v1630968516/547313_673d846bad.jpg\" alt=\"\"></figure><p style=\"margin-left:0px;text-align:justify;\">A tela de 6,5 polegadas não faz parte da grife Dynamic AMOLED, mas pelo menos mantém os 120 Hz dos modelos superiores. Sua resolução é apenas Full HD+, mas suficiente para entregar uma imagem nítida. O brilho máximo é similar ao do S20 tradicional e garante boa visibilidade mesmo nos dias mais ensolarados. Há suporte a HDR que funciona com YouTube e Amazon Prime Video.</p><p style=\"margin-left:0px;text-align:justify;\">A tela pode ser usada nos modos 60 ou 120 Hz. Não há um modo automático que permute entre os dois como acontece em celulares de outras marcas. Então saiba que ao optar por 120 Hz você terá fluidez superior o tempo todo em troca de menor autonomia da bateria.</p><p style=\"margin-left:0px;text-align:justify;\">As cores exibidas são saturadas iguais às de outros com tela Super AMOLED, mas você pode melhorar a calibração ao mudar para o perfil Natural nas configurações. No geral, a tela do S20 FE não fica devendo para seus irmãos mais caros.</p><p style=\"margin-left:0px;text-align:justify;\">A parte sonora evoluiu e agora há som estéreo devido ao alto-falante de chamadas que serve como canal secundário. O S20 FE entrega som mais potente do que seu antecessor, mas não a ponto de se igualar com os demais da linha S20. Isso também se aplica à qualidade sonora. Ele entrega bom áudio, mas falta graves. Pelo menos não distorce quando no máximo e reproduz vozes com boa clareza.</p><p>&nbsp;</p><pre><code class=\"language-plaintext\">&lt;iframe width=\"766\" height=\"430\" src=\"https://www.youtube.com/embed/JLESC_njEyo\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>",
+        "allowComments": true,
+        "cover": {
+          "id": "61369af6944b2833649bd0b6",
+          "alternativeText": "",
+          "url": "https://res.cloudinary.com/dakogxupg/image/upload/v1630968562/547345_1e3e1e3dc5.jpg"
+        },
+        "categories": [
+          {
+            "id": "6136965c82ff5c26f0f3061c",
+            "displayName": "tecnologia",
+            "slug": "tecnologia"
+          }
+        ],
+        "tags": [
+          {
+            "id": "6136963582ff5c26f0f3061b",
+            "displayName": "tecnologia",
+            "slug": "tecnologia"
+          }
+        ],
+        "author": {
+          "id": "6136936a82ff5c26f0f30614",
+          "displayName": "song shik",
+          "slug": "song-shik"
+        }
+      }
+    ]
+  }
+}
