@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleHeader /> should render heading, excerpt, cover img and meta 1`] = `
+.c5 {
+  font-size: 1.6rem;
+  color: #BBBBBB;
+  font-style: italic;
+}
+
+.c5 .categories span::after {
+  content: ', ';
+}
+
+.c5 .categories span:last-child::after {
+  content: ' ';
+}
+
+.c5 a {
+  color: #BBBBBB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 {
+  color: #0A1128;
+  line-height: 1.2;
+  font-size: 4.0rem;
+  text-transform: none;
+}
+
+.c0 {
+  padding-bottom: 4.0rem;
+  margin-bottom: 4.0rem;
+  border-bottom: 0.1rem solid #DDDDDD;
+}
+
+.c0 .c1 {
+  margin: 0;
+  margin-bottom: 2.4rem;
+}
+
+.c3 {
+  margin: 2.4rem 0;
+  font-size: 2.4rem;
+}
+
+.c4 {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <h1
+      class="c1 c2"
+    >
+      Anonymous declara guerra contra Bolsonaro e hackeia Fib Bank
+    </h1>
+    <p
+      class="c3"
+    >
+      "Nós tomaremos as ruas para mostrar que o queremos fora do governo, derrotado", diz o vídeo do grupo. "Em suas próprias palavras, restarão apenas duas opções para ele: prisão ou cova.".
+    </p>
+    <img
+      alt="Anonymous declara guerra contra Bolsonaro e hackeia Fib Bank"
+      class="c4"
+      src="https://res.cloudinary.com/dakogxupg/image/upload/v1630967260/06140704347221_0c6996ecd2.jpg"
+    />
+    <div
+      class="c5"
+    >
+      <p>
+        <span>
+          Por
+        </span>
+        <a
+          href="/author/song-shik"
+        >
+           
+          song shik
+        </a>
+        <span
+          class="separator"
+        >
+           | 
+        </span>
+        <time
+          datetime="2020-04-20"
+        >
+          19 de abr. de 2020
+           
+        </time>
+        <span
+          class="separator"
+        >
+           | 
+        </span>
+        <span
+          class="categories"
+        >
+          <span>
+            <a
+              href="/category/tecnologia"
+            >
+              tecnologia
+            </a>
+          </span>
+        </span>
+      </p>
+    </div>
+  </header>
+</div>
+`;

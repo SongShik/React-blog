@@ -4,7 +4,7 @@ export type CloneMeProps = {
   title?: string;
 };
 
-export function CloneMe({ title = 'Change-me' }: CloneMeProps) {
+export const CloneMe = ({ title = 'Change-me' }: CloneMeProps) => {
   return (
     <Styled.Wrapper>
       <h1>{title}</h1>
