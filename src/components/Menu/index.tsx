@@ -19,7 +19,7 @@ export type MenuProps = {
   logo: string;
 }
 
-export const Menu = ({ links, blogName, logo, }: MenuProps) => {
+export const Menu = ({ links = [], blogName, logo, }: MenuProps) => {
 
   const [menuVisible, setMenuVisible] = useState(false);
 

@@ -10,6 +10,7 @@ const titleSize = {
   `,
   big: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.xlarge};
+    text-align: center;
   `,
   huge: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.xhuge};

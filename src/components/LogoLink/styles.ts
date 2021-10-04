@@ -5,10 +5,12 @@ export const Container = styled.a`
   align-items: center;
   text-decoration: none;
   color: inherit;
+`;
 
-  > img {
-    height: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-  }
+export const Boximg = styled.img`
+  background: url(${(props) => props.color}) center center no-repeat;
+  background-size: cover;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
 `;

@@ -1,4 +1,4 @@
-import { StrapiImage } from '../../shared-typed/strapi-image';
+import { StrapiImage } from '../../shared-types/strapi-image';
 import { ArticleMeta, ArticleMetaProps } from '../ArticleMeta';
 import { Heading } from '../Heading';
 import * as Styled from './styles';
@@ -25,9 +25,12 @@ export const ArticleHeader = ({
 
       <Styled.Excerpt>{excerpt}</Styled.Excerpt>
 
+      <Styled.ArticleContainer>
+        <ArticleMeta categories={categories} author={author} createdAt={createdAt} />
+      </Styled.ArticleContainer>
+
       <Styled.Cover src={cover.url} alt={title} />
 
-      <ArticleMeta categories={categories} author={author} createdAt={createdAt} />
     </Styled.Wrapper >
   );
 };

@@ -18,12 +18,16 @@ export const LogoLink = ({
   const nextLink = link.match(/^\//) ? true : false;
   const target = newTab ? '_blank' : '_self';
 
+  const color = '#000';
   if (nextLink) {
     return (
       <Heading size="small" uppercase>
         <Link href={link} passHref>
           <Styled.Container target={target}>
-            {!!srcImg && <img src={srcImg} alt={text} />}
+            {!!srcImg &&
+              <Styled.Boximg color={srcImg}>
+              </Styled.Boximg>
+            }
             {!srcImg && text}
           </Styled.Container>
         </Link>
