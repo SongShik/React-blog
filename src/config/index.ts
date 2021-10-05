@@ -1,6 +1,6 @@
 export default {
-  url: 'https://strapi-landing-pages-project-2.herokuapp.com',
+  url: 'https://safe-headland-47289.herokuapp.com',
   siteName: 'Song Shik',
   defaultSlug: 'landing-page',
-  graphqlURL: 'http://localhost:1337/graphql',
+  graphqlURL: 'https://safe-headland-47289.herokuapp.com/graphql',
 };

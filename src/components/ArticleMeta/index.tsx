@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { Author } from '../../shared-typed/author';
-import { Category } from '../../shared-typed/category';
+import { Author } from '../../shared-types/author';
+import { Category } from '../../shared-types/category';
 import { formatDate } from '../../utils/format-date';
 import * as Styled from './styles';
 

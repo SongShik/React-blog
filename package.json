@@ -60,9 +60,5 @@
       "npm run lint -- --fix",
       "npm test -- --findRelatedTests --bail"
     ]
-  },
-  "engines": {
-    "node": ">=14.x.x",
-    "npm": ">=6.0.0"
   }
 }
