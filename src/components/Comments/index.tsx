@@ -9,22 +9,19 @@ export type CommentsProps = {
 };
 
 export const Comments = ({ id, slug, title, allowComments }: CommentsProps) => {
-  if (!allowComments) {
-    return true;
-  } else {
-    return (
-      <Styled.Wrapper>
+  if (!allowComments) return true;
 
-        <DiscussionEmbed
-          shortname="blog-feito-pelo-song"
-          config={{
-            url: `/post/${slug}`,
-            identifier: id,
-            title: title,
-            language: 'pt_BR'
-          }}
-        />
-      </Styled.Wrapper>
-    );
-  }
+  return (
+    <Styled.Wrapper>
+      <DiscussionEmbed
+        shortname="blog-feito-pelo-song"
+        config={{
+          url: `/post/${slug}`,
+          identifier: id,
+          title: title,
+          language: 'pt_BR'
+        }}
+      />
+    </Styled.Wrapper>
+  );
 }
