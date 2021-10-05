@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { loadPosts, LoadPostVariables } from "../../api/load-posts";
 import { PostGrid } from "../../components/PostGrid";
 import { PostStrapi } from "../../shared-types/post-strapi";
@@ -13,31 +13,39 @@ export type PostsTemplateProps = {
 };
 
 export const PostsTemplate = ({ settings, posts = [], variables }: PostsTemplateProps) => {
-  const [statePosts, setStatePost] = useState(posts);
-  const [stateVariables, setstateVariables] = useState(variables);
-  const [buttonDisable, setbuttonDisable] = useState(false);
-  const [noMorePosts, setnoMorePosts] = useState(false);
+  const [statePosts, setStatePosts] = useState(posts);
+  const [stateVariables, setStateVariables] = useState(variables);
+  const [buttonDisabled, setButtonDisabled] = useState(false);
+  const [noMorePosts, setNoMorePosts] = useState(false);
 
-  const hendleLoadMorePosts = async () => {
-    setbuttonDisable(true);
+  useEffect(() => {
+    setStatePosts(posts);
+    setNoMorePosts(false);
+    setButtonDisabled(false);
+    setStateVariables(variables);
+  }, [posts, variables]);
+
+
+  async function hendleLoadMorePosts() {
+    setButtonDisabled(true);
 
     const newVariables = {
       ...stateVariables,
       start: stateVariables.start + stateVariables.limit,
       limit: stateVariables.limit,
-    }
+    };
     const morePosts = await loadPosts(newVariables);
 
     if (!morePosts || !morePosts.posts || !morePosts.posts.length) {
-      setnoMorePosts(true);
+      setNoMorePosts(true);
       return;
     }
 
-    setbuttonDisable(false);
-    setstateVariables(newVariables);
-    setStatePost((p) => [...p, ...morePosts.posts]);
+    setButtonDisabled(false);
+    setStateVariables(newVariables);
+    setStatePosts((p) => [...p, ...morePosts.posts]);
 
-  };
+  }
 
   return (
     <BaseTemplate settings={settings}>
@@ -45,7 +53,7 @@ export const PostsTemplate = ({ settings, posts = [], variables }: PostsTemplate
 
       {statePosts && statePosts.length ? (
         <Styled.ButtonContainer>
-          <Styled.Button onClick={hendleLoadMorePosts} disabled={buttonDisable}>
+          <Styled.Button onClick={hendleLoadMorePosts} disabled={buttonDisabled}>
             {noMorePosts ? 'Sem mais posts' : 'Carregar mais'}
           </Styled.Button>
         </Styled.ButtonContainer>

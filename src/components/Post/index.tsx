@@ -1,4 +1,5 @@
 import { ArticleHeader, ArticleHeaderProps } from '../ArticleHeader';
+import { Comments } from '../Comments';
 import { HtmlComponent } from '../HtmlComponent';
 import * as Styled from './styles';
 
@@ -29,6 +30,7 @@ export const Post = ({
       />
 
       <HtmlComponent html={content} />
+
     </Styled.Wrapper >
   );
 };
