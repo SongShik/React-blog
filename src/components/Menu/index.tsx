@@ -44,8 +44,8 @@ export const Menu = ({ links = [], blogName, logo, }: MenuProps) => {
             />
 
             {links.map(link => (
-              <MenuLink key={link.id} link={link.link} newTab={link.newTab}>
-                {link.text}
+              <MenuLink key={link.link} link={link.link} newTab={link.newTab}>
+                lorem
               </MenuLink>
             ))}
           </Styled.Logo>
