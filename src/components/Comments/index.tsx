@@ -12,7 +12,7 @@ export const Comments = ({ id, slug, title, allowComments }: CommentsProps) => {
   if (!allowComments) return null;
 
   const config = {
-    url: `/post/${slug}`,
+    url: `https://react-blog-songshik.vercel.app/post/${slug}`,
     identifier: id,
     title: title,
     language: 'pt_BR'
