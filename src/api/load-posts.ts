@@ -4,7 +4,7 @@ import { GRAPHQL_QUERY } from '../graphql/queries';
 import { PostStrapi } from '../shared-types/post-strapi';
 import { SettingsStrapi } from '../shared-types/settings-strapi';
 
-export type LoadPostVariables = {
+export type LoadPostsVariables = {
     categorySlug?: string;
     postSlug?: string;
     postSearch?: string;
@@ -17,17 +17,17 @@ export type LoadPostVariables = {
 
 export type StrapiPostAndSettings = {
     setting: SettingsStrapi,
-    post: PostStrapi[],
-    variables?: LoadPostVariables;
+    posts: PostStrapi[],
+    variables?: LoadPostsVariables;
 }
 
-export const defaultLoadPostsVariables: LoadPostVariables = {
+export const defaultLoadPostsVariables: LoadPostsVariables = {
     sort: 'createdAt:desc',
     start: 0,
     limit: 3,
 }
 
-export const loadPosts = async (variables: LoadPostVariables = {}): Promise<PostStrapi[]> => {
+export const loadPosts = async (variables: LoadPostsVariables = {},): Promise<StrapiPostAndSettings> => {
     const data = await request(config.graphqlURL, GRAPHQL_QUERY, {
         ...defaultLoadPostsVariables,
         ...variables,

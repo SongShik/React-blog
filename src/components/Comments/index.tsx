@@ -9,19 +9,19 @@ export type CommentsProps = {
 };
 
 export const Comments = ({ id, slug, title, allowComments }: CommentsProps) => {
-  if (!allowComments) return true;
+  if (!allowComments) return null;
+
+  const config = {
+    url: `/post/${slug}`,
+    identifier: id,
+    title: title,
+    language: 'pt_BR'
+  }
 
   return (
     <Styled.Wrapper>
       <DiscussionEmbed
-        shortname="blog-feito-pelo-song"
-        config={{
-          url: `/post/${slug}`,
-          identifier: id,
-          title: title,
-          language: 'pt_BR'
-        }}
-      />
+        shortname="blog-feito-pelo-song" config={config} />
     </Styled.Wrapper>
   );
-}
+};

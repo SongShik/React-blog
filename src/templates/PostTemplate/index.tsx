@@ -6,12 +6,12 @@ import { BaseTemplate } from "../Base";
 import { PostTags } from '../../components/PostTags';
 import { Comments } from '../../components/Comments';
 
-export type PostTemplate = {
+export type PostTemplateProps = {
   settings: SettingsStrapi;
-  posts?: PostStrapi[];
+  post: PostStrapi;
 };
 
-export const PostTemplate = ({ settings, post }: PostTemplate) => {
+export const PostTemplate = ({ settings, post }: PostTemplateProps) => {
   return (
     <BaseTemplate settings={settings}>
       <Post {...post} />
