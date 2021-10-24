@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SongBlog
 
-## Getting Started
+O melhor blog onde você pode se atualizar com diferentes informações.
+- Crie seu perfil, apenas com poucas informações
+- Adicione foto, descrição e titulo para seu perfil
+- Crie, edite, apague, inumeras coias como tags, categorias, autores
+- Veja o que seus amigos estão comentando \
+**É o mais importante de tudo se divirta :)**
 
-First, run the development server:
+Front-end
+https://react-blog-songshik.vercel.app/
+Back-end
+https://safe-headland-47289.herokuapp.com/
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Informações importantes
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto SongBlog foi criado com as recursos utilizados: \
+**Front end:** 
+- Next Js
+- React Js
+- Storybook
+- Styled Components
+- Comentario com Disus
+- GIT, e github
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+**back end:** 
+Foi utilizado um projeto a parte deste
+- Strapi
+- MongoDB
+- Graphql
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+**Hospedagem na nuvem:** 
+- Vercel (Front-end)
+- Heroku (Back-end)
+- MongoDB Atlas (Banco de dados)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Como Começar
 
-## Learn More
+No seu diretorio, execute:
 
-To learn more about Next.js, take a look at the following resources:
+### `npm install`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Logo após a finalização utilize:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### `npm run dev`
 
-## Deploy on Vercel
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Informações sobre como funcionar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Local**
+- Antes de tudo deixe executando o projeto do back-end, 
+- Depois mude o arquivo src/config/index.ts para os dados locais
+- Instale as dependencias e rode o projeto, todos os commits serão atualizados automaticamente na vercel
+
+**No Servidor na nuvem**
+- Os projetos estão configurados para funcionar na nuvem, sendo assim veja se o back(heroku, mongoDB) estão funcionando
+- Instale as dependencias e rode o projeto, todos os commits serão atualizados automaticamente na vercel
