@@ -4,7 +4,8 @@ O melhor blog onde você pode se atualizar com diferentes informações.
 - Crie seu perfil, apenas com poucas informações
 - Adicione foto, descrição e titulo para seu perfil
 - Crie, edite, apague, inumeras coias como tags, categorias, autores
-- Veja o que seus amigos estão comentando \
+- Veja o que seus amigos estão comentando 
+- Altere a sua visualização com modo claro e escuro \
 **É o mais importante de tudo se divirta :)**
 
 Front-end
@@ -45,6 +46,13 @@ Logo após a finalização utilize:
 ### `npm run dev`
 
 Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
+
+Para utilizar o Storybook pare o servidor e use:
+
+### `npm run storybook`
+
+Abra [http://192.168.1.9:6006/](http://192.168.1.9:6006/) para visualizá-lo no navegador.
+
 
 ## Informações sobre como funcionar
 
