@@ -21,7 +21,7 @@ O projeto SongBlog foi criado com as recursos utilizados: \
 - React Js
 - Storybook
 - Styled Components
-- Comentario com Disus
+- Comentario com Disqus
 - GIT, e github
 
 **back end:** 
